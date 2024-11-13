@@ -1,0 +1,496 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 15:03:36,634 p=2421 u=landeira n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>. did not find expected <document start>
+  in "<unicode string>", line 4, column 1
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 4, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- debug:
+^ here
+
+2024-11-13 15:05:30,772 p=2499 u=landeira n=ansible | ERROR! 'file' is not a valid attribute for a Play
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear estructura de directorios en un solo comando
+  ^ here
+
+2024-11-13 15:08:46,124 p=2536 u=landeira n=ansible | ERROR! 'file' is not a valid attribute for a Play
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear estructura de directorios en un solo comando
+  ^ here
+
+2024-11-13 15:46:37,432 p=2689 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 15:46:37,785 p=2689 u=landeira n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'> instead: /home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/inventory
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/inventory': line 1, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+localhost
+^ here
+
+2024-11-13 16:05:09,450 p=2704 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 16:05:09,859 p=2704 u=landeira n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'> instead: /home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/inventory
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/inventory': line 1, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+localhost
+^ here
+
+2024-11-13 16:07:56,251 p=2709 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 16:07:56,424 p=2709 u=landeira n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 2 (char 1)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>. did not find expected <document start>
+  in "<unicode string>", line 2, column 1
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/inventory': line 2, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+[local]
+localhost ansible_connection=local
+^ here
+
+2024-11-13 16:52:52,407 p=2748 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 16:52:52,720 p=2748 u=landeira n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 2 (char 1)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>. did not find expected <document start>
+  in "<unicode string>", line 2, column 1
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/inventory/hosts': line 2, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+[all:children]
+testing
+^ here
+
+2024-11-13 16:59:06,746 p=2752 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 16:59:08,118 p=2752 u=landeira n=ansible | 127.0.0.1 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).",
+    "unreachable": true
+}
+2024-11-13 16:59:08,717 p=2752 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 16:59:08,719 p=2752 u=landeira n=ansible | localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.10"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2024-11-13 17:18:30,335 p=2867 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 17:18:30,964 p=2867 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 17:18:30,964 p=2867 u=landeira n=ansible | skipping: no hosts matched
+2024-11-13 17:18:30,965 p=2867 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 17:18:30,974 p=2867 u=landeira n=ansible | ERROR! the role '2do_parcial' was not found in /home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/roles:/tmp:/home/landeira/UTN-FRA_SO_Examenes/202406:/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tests/test.yml': line 4, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - 2do_parcial
+      ^ here
+
+2024-11-13 17:26:54,505 p=2879 u=landeira n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-13 17:26:54,821 p=2879 u=landeira n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 2 (char 1)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>. did not find expected <document start>
+  in "<unicode string>", line 2, column 1
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/inventory/hosts': line 2, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+[all:children]
+testing
+^ here
+
+2024-11-13 17:34:03,647 p=2896 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 17:34:04,224 p=2896 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 17:34:04,291 p=2896 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 17:34:05,347 p=2896 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 17:34:08,840 p=2896 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 17:34:08,840 p=2896 u=landeira n=ansible | ok: [localhost]
+2024-11-13 17:34:08,854 p=2896 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 17:34:08,905 p=2896 u=landeira n=ansible | ERROR! conflicting action statements: file, recurse
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear estructura de directorios en un solo comando
+  ^ here
+
+2024-11-13 17:38:45,816 p=3049 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 17:38:46,178 p=3049 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 17:38:46,195 p=3049 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 17:38:46,961 p=3049 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 17:38:49,237 p=3049 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 17:38:49,239 p=3049 u=landeira n=ansible | ok: [localhost]
+2024-11-13 17:38:49,259 p=3049 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 17:38:49,372 p=3049 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 17:38:49,384 p=3049 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 17:38:50,238 p=3049 u=landeira n=ansible | changed: [localhost]
+2024-11-13 17:38:50,255 p=3049 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/equipo] ****************************************************************************************************************************************************
+2024-11-13 17:38:50,849 p=3049 u=landeira n=ansible | changed: [localhost]
+2024-11-13 17:38:50,878 p=3049 u=landeira n=ansible | TASK [Otra tarea] ************************************************************************************************************************************************************************************************
+2024-11-13 17:38:50,909 p=3049 u=landeira n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-13 17:38:50,913 p=3049 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 17:38:50,915 p=3049 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 17:38:50,916 p=3049 u=landeira n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:17:47,030 p=3331 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:17:47,617 p=3331 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:17:47,652 p=3331 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:17:48,030 p=3331 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:17:51,481 p=3331 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:17:51,482 p=3331 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:17:51,494 p=3331 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:17:51,529 p=3331 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:17:51,538 p=3331 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:17:52,144 p=3331 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:17:52,149 p=3331 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:17:52,151 p=3331 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:17:52,152 p=3331 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:23:42,604 p=3466 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:23:42,973 p=3466 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:23:42,998 p=3466 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:23:43,329 p=3466 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:23:46,454 p=3466 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:23:46,454 p=3466 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:23:46,466 p=3466 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:23:46,582 p=3466 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:23:46,597 p=3466 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:23:47,341 p=3466 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:23:47,344 p=3466 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:23:47,344 p=3466 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:23:47,347 p=3466 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:28:09,138 p=3597 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:28:09,571 p=3597 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:28:09,590 p=3597 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:28:10,608 p=3597 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:28:13,228 p=3597 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:28:13,228 p=3597 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:28:13,247 p=3597 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:28:13,343 p=3597 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:28:13,361 p=3597 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:28:14,134 p=3597 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (file) module: become. Supported parameters include: _diff_peek, _original_basename, access_time, access_time_format, attributes, follow, force, group, mode, modification_time, modification_time_format, owner, path, recurse, selevel, serole, setype, seuser, src, state, unsafe_writes (attr, dest, name)."}
+2024-11-13 18:28:14,138 p=3597 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:28:14,139 p=3597 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:28:14,141 p=3597 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:33:47,500 p=3730 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:33:47,867 p=3730 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:33:47,886 p=3730 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:33:48,524 p=3730 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:33:50,578 p=3730 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:33:50,579 p=3730 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:33:50,592 p=3730 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:33:50,710 p=3730 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:33:50,724 p=3730 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:33:51,494 p=3730 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:33:51,498 p=3730 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:33:51,498 p=3730 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:33:51,499 p=3730 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:39:25,677 p=3864 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:39:25,943 p=3864 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:39:25,958 p=3864 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:39:26,549 p=3864 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:39:28,694 p=3864 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:39:28,695 p=3864 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:39:28,712 p=3864 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:39:28,762 p=3864 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:39:28,778 p=3864 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:39:29,577 p=3864 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:39:29,581 p=3864 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:39:29,582 p=3864 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:39:29,584 p=3864 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:41:43,472 p=3995 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:41:43,855 p=3995 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:41:43,877 p=3995 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:41:44,424 p=3995 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:41:46,405 p=3995 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:41:46,406 p=3995 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:41:46,420 p=3995 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:41:46,490 p=3995 u=landeira n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 5, column 7
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear directorio /tmp/2do_parcial/alumno
+      ^ here
+
+2024-11-13 18:42:58,052 p=4099 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:42:58,406 p=4099 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:42:58,420 p=4099 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:42:58,626 p=4099 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:43:01,296 p=4099 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:43:01,296 p=4099 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:43:01,312 p=4099 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:43:01,369 p=4099 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:43:01,384 p=4099 u=landeira n=ansible | TASK [2do_parcial : Crear directorio /tmp/2do_parcial/alumno] ****************************************************************************************************************************************************
+2024-11-13 18:43:02,184 p=4099 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:43:02,186 p=4099 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:43:02,187 p=4099 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:43:02,187 p=4099 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:45:00,827 p=4229 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:45:01,162 p=4229 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:45:01,186 p=4229 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:45:01,740 p=4229 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:45:03,749 p=4229 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:45:03,749 p=4229 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:45:03,766 p=4229 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:45:03,815 p=4229 u=landeira n=ansible | ERROR! conflicting action statements: file, recurse
+
+The error appears to be in '/home/landeira/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Crear estructura de directorios en un solo comando
+  ^ here
+
+2024-11-13 18:46:21,503 p=4332 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:46:21,774 p=4332 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:46:21,793 p=4332 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:46:22,301 p=4332 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:46:24,361 p=4332 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:46:24,362 p=4332 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:46:24,377 p=4332 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:46:24,434 p=4332 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:46:24,451 p=4332 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 18:46:25,175 p=4332 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp as requested: [Errno 13] Permission denied: b'/tmp'", "path": "/tmp/2do_parcial/alumno"}
+2024-11-13 18:46:25,182 p=4332 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:46:25,184 p=4332 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:46:25,184 p=4332 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:49:18,654 p=4459 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 18:49:18,918 p=4459 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 18:49:18,933 p=4459 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 18:49:19,584 p=4459 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 18:49:21,511 p=4459 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 18:49:21,513 p=4459 u=landeira n=ansible | ok: [localhost]
+2024-11-13 18:49:21,527 p=4459 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 18:49:21,597 p=4459 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 18:49:21,612 p=4459 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 18:49:22,053 p=4459 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-11-13 18:49:22,058 p=4459 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 18:49:22,059 p=4459 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 18:49:22,067 p=4459 u=landeira n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:02:58,824 p=4594 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 19:02:59,278 p=4594 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 19:02:59,315 p=4594 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 19:02:59,793 p=4594 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 19:03:03,904 p=4594 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 19:03:03,906 p=4594 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:03:03,943 p=4594 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 19:03:04,018 p=4594 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 19:03:04,035 p=4594 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:03:04,972 p=4594 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:03:04,984 p=4594 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:03:05,526 p=4594 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp/2do_parcial/equipo as requested: [Errno 13] Permission denied: b'/tmp/2do_parcial/equipo'", "path": "/tmp/2do_parcial/equipo"}
+2024-11-13 19:03:05,529 p=4594 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 19:03:05,530 p=4594 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:03:05,530 p=4594 u=landeira n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:03:50,145 p=4758 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 19:03:50,489 p=4758 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 19:03:50,510 p=4758 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 19:03:51,228 p=4758 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 19:03:53,834 p=4758 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 19:03:53,837 p=4758 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:03:53,862 p=4758 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 19:03:53,953 p=4758 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 19:03:53,995 p=4758 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:03:55,045 p=4758 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:03:55,066 p=4758 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:03:55,644 p=4758 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /tmp/2do_parcial/equipo as requested: [Errno 13] Permission denied: b'/tmp/2do_parcial/equipo'", "path": "/tmp/2do_parcial/equipo"}
+2024-11-13 19:03:55,648 p=4758 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 19:03:55,649 p=4758 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:03:55,649 p=4758 u=landeira n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:05:25,217 p=4913 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 19:05:25,495 p=4913 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 19:05:25,515 p=4913 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 19:05:26,136 p=4913 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 19:05:28,109 p=4913 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 19:05:28,109 p=4913 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:05:28,123 p=4913 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 19:05:28,199 p=4913 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 19:05:28,209 p=4913 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:05:29,002 p=4913 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:05:29,014 p=4913 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:05:29,573 p=4913 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:05:29,605 p=4913 u=landeira n=ansible | TASK [2do_parcial : generar archivo datos_alumno.txt] ************************************************************************************************************************************************************
+2024-11-13 19:05:29,877 p=4913 u=landeira n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ansible.errors.AnsibleUndefinedVariable: 'Agustin' is undefined
+2024-11-13 19:05:29,881 p=4913 u=landeira n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Agustin' is undefined"}
+2024-11-13 19:05:29,886 p=4913 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 19:05:29,886 p=4913 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:05:29,887 p=4913 u=landeira n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:12:49,130 p=5158 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 19:12:49,527 p=5158 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 19:12:49,555 p=5158 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 19:12:50,289 p=5158 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 19:12:52,049 p=5158 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 19:12:52,050 p=5158 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:12:52,062 p=5158 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 19:12:52,116 p=5158 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 19:12:52,124 p=5158 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:12:52,704 p=5158 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:12:52,714 p=5158 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:12:53,011 p=5158 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:12:53,019 p=5158 u=landeira n=ansible | TASK [2do_parcial : generar archivo datos_alumno.txt] ************************************************************************************************************************************************************
+2024-11-13 19:12:53,835 p=5158 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:12:53,846 p=5158 u=landeira n=ansible | TASK [2do_parcial : generar archivo datos_equipo.txt] ************************************************************************************************************************************************************
+2024-11-13 19:12:54,567 p=5158 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:12:54,584 p=5158 u=landeira n=ansible | TASK [Otra tarea] ************************************************************************************************************************************************************************************************
+2024-11-13 19:12:54,620 p=5158 u=landeira n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-13 19:12:54,628 p=5158 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 19:12:54,629 p=5158 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:12:54,629 p=5158 u=landeira n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:28:15,347 p=5462 u=landeira n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-13 19:28:15,667 p=5462 u=landeira n=ansible | PLAY [all] *******************************************************************************************************************************************************************************************************
+2024-11-13 19:28:15,688 p=5462 u=landeira n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************************
+2024-11-13 19:28:16,066 p=5462 u=landeira n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nlandeira@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-13 19:28:18,509 p=5462 u=landeira n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-11-13 19:28:18,510 p=5462 u=landeira n=ansible | ok: [localhost]
+2024-11-13 19:28:18,533 p=5462 u=landeira n=ansible | TASK [include_role : 2do_parcial] ********************************************************************************************************************************************************************************
+2024-11-13 19:28:18,620 p=5462 u=landeira n=ansible | included: 2do_parcial for localhost
+2024-11-13 19:28:18,627 p=5462 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:28:19,209 p=5462 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:28:19,219 p=5462 u=landeira n=ansible | TASK [2do_parcial : Crear estructura de directorios en un solo comando] ******************************************************************************************************************************************
+2024-11-13 19:28:19,515 p=5462 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:28:19,524 p=5462 u=landeira n=ansible | TASK [2do_parcial : generar archivo datos_alumno.txt] ************************************************************************************************************************************************************
+2024-11-13 19:28:20,342 p=5462 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:28:20,354 p=5462 u=landeira n=ansible | TASK [2do_parcial : generar archivo datos_equipo.txt] ************************************************************************************************************************************************************
+2024-11-13 19:28:20,956 p=5462 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:28:20,963 p=5462 u=landeira n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores sin contraseña] ******************************************************************************************************************************
+2024-11-13 19:28:21,480 p=5462 u=landeira n=ansible | changed: [localhost]
+2024-11-13 19:28:21,493 p=5462 u=landeira n=ansible | TASK [Otra tarea] ************************************************************************************************************************************************************************************************
+2024-11-13 19:28:21,514 p=5462 u=landeira n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-13 19:28:21,517 p=5462 u=landeira n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************************
+2024-11-13 19:28:21,518 p=5462 u=landeira n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-13 19:28:21,520 p=5462 u=landeira n=ansible | localhost                  : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
